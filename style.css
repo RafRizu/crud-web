@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+  text-decoration: none;
+  color: black;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+}
+.wrapper{
+    margin: 0px 7%;
+    top: 0;
+}
+.tb{
+    margin:3rem 7%;
+    border: 0.7px solid black;
+    
+}
+.tb h2{
+    border-bottom: 0.7px solid black;
+}
+.my-tb{
+    padding: 0px 7%;
+}
+.edit{
+  box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.8);
+}
+a{
+  text-decoration: none;
+  color: #ffff;
+}
+h6{
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 1px 1%;
+}
+.header1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
