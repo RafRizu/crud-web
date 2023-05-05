@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>CRUD PHP</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?version=1">
 </head>
 <body>
     
@@ -19,13 +19,16 @@
                 <h2 class="bg-warning text-center py-3">Data User</h2>
                 <div class="mx-3">        
                 <div class="row">
-                    <div class="col-6">
-                        <a href="tambahdata.php" class="btn btn-success ms-4 mt-1 mb-3">Tambah Data</a> 
+                    <div class="col-2">
+                        <a href="tambahdata.php" class="btn btn-success ms-2 mt-1 mb-3">Tambah Data</a> 
+                    </div>
+                    <div class="col-4">
+                        <a href="cetak.php" target="_blank" class="btn btn-primary mt-1 mb-3">Cetak Data</a>
                     </div>
                     <div class="col-6">
                       <form action="index.php" method="get">
                         <label>Cari Nama :</label>
-                        <input type="text" class name="cari">
+                        <input type="text" class="form-control-sm" name="cari">
                         <input type="submit" class="btn btn-warning" value="Cari">
                     </form>
                     </div>

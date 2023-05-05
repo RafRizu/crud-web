@@ -19,10 +19,13 @@ body {
 .tb{
     margin:3rem 7%;
     border: 0.7px solid black;
-    
+    border-radius: 1rem;
+    box-shadow: 0px 2px 4px rgb(49, 49, 49);
 }
 .tb h2{
     border-bottom: 0.7px solid black;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 .my-tb{
     padding: 0px 7%;
