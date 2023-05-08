@@ -13,10 +13,10 @@
       
 
   <br>
-	<div class="d-block mx-auto my-auto">
-  <div class="mx-auto my-auto py-3">
+	<div class="d-block mx-auto pb-4">
+  <div class="mx-auto my-auto">
     <form action="aksi-tambah.php" method="post">
-      <table class="py-4 " border="1" align="center" cellpadding="10">
+      <table class="py-2 " border="1" align="center" cellpadding="10">
         <tr class="bg-warning">
           <td colspan="2">
         <div>
@@ -32,9 +32,14 @@
         $pesan = $_GET['pesan'];
         if($pesan == "gagal"){
             echo "Data Tidak Boleh Kosong.<br>";
-                  } 
-                }
-                  ?></td>
+         
+        }elseif($pesan == "duplikat"){
+          echo "Username atau Email Sudah Digunakan.<br>";
+        }else(empty($pesan));{
+          echo "Masukkan Data";  
+        }
+      }
+?></td>
         </tr>
         <tr>
           <td>Username</td>
@@ -44,6 +49,21 @@
           <td>Nama</td>
           <td>
             <input type="text" name="nama" id="">
+          </td>
+        </tr>
+        <tr>
+          <td>Jenis Kelamin</td>
+          <td>
+            <select name="jk" id="">
+              <option value="L">Laki-laki</option>
+              <option value="P">Perempuan</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Tanggal Lahir</td>
+          <td>
+            <input type="date" name="ttl" id="">
           </td>
         </tr>
         <tr>

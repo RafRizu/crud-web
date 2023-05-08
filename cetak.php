@@ -16,6 +16,8 @@
                 <th>No</th>
                 <th>Username</th>
                 <th>Nama</th>
+                <th>JK</th>
+                <th>Tanggal Lahir</th>
                 <th>Alamat</th>
                 <th>Email</th>
                 <th>No HP</th>
@@ -31,6 +33,8 @@
                 <td><?php echo $no++; ?></td>
                 <td><?php echo $d['username']; ?></td>
                 <td><?php echo $d['nama']; ?></td>
+                <td><?php echo $d['jk']; ?></td>
+                <td><?php echo $d['ttl']; ?></td>
                 <td><?php echo $d['alamat']; ?></td>
                 <td><?php echo $d['email']; ?></td>
                 <td><?php echo $d['no_hp']; ?></td>

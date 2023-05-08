@@ -34,10 +34,24 @@
           <td><input type="text" disabled="true" value="<?php echo $data['username'] ?>" name="username"></td>
         </tr>
         <tr>
-          
           <td>Nama</td>
           <td>
             <input type="text" name="nama" id="" value="<?php echo $data['nama'] ?>">
+          </td>
+        </tr>
+        <tr>
+          <td>Jenis Kelamin</td>
+          <td>
+            <select name="jk" id="" value="<?php echo $data['jk'] ?>">
+              <option value="L">Laki-laki</option>
+              <option value="P">Perempuan</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Tanggal Lahir</td>
+          <td>
+            <input type="date" name="ttl" id="" value="<?php echo $data['ttl'] ?>">
           </td>
         </tr>
         <tr>
