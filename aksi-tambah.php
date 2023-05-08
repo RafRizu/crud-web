@@ -20,7 +20,7 @@ if (empty($username && $nama && $alamat && $email && $no_hp)) {
 mysqli_query($conn,"insert into user values('$username','$nama','$alamat','$email','$no_hp')");
  
 // mengalihkan halaman kembali ke index.php
-header("location:index.php?pesan=tambah");
+header("location:index.php?pesan=input");
  }
 
 ?>
