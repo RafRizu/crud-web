@@ -42,7 +42,18 @@
         <tr>
           <td>Jenis Kelamin</td>
           <td>
-            <select name="jk" id="" value="<?php echo $data['jk'] ?>">
+            <select name="jk" id="">
+
+              <option value="<?php echo $data['jk'] ?>">
+            <?php 
+            if($data['jk'] == "L"){
+              echo "Laki-laki";
+            }else{
+              echo "Perempuan";
+            }
+            ?>
+            </option>
+              <option class="disabled" value="">----------</option>
               <option value="L">Laki-laki</option>
               <option value="P">Perempuan</option>
             </select>

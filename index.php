@@ -19,13 +19,13 @@
                 <h2 class="bg-warning text-center py-3">Data User</h2>
                 <div class="mx-3">        
                 <div class="row">
-                    <div class="col-5">
-                        <a href="tambahdata.php" class="btn btn-success ms-2 mt-1 mb-3">Tambah Data</a> 
+                    <div class="col-2">
+                        <a href="tambahdata.php" class="btn btn-sm btn-success ms-2 mt-1 mb-3">Tambah Data</a> 
                     </div>
-                    <!-- <div class="col-4">
-                        <a href="cetak.php" target="_blank" class="btn btn-primary mt-1 mb-3">Cetak Data</a>
-                    </div> -->
-                    <div class="col-7">
+                    <div class="col-4">
+                        <a href="cetak.php" target="_blank" class="btn btn-sm btn-primary mt-1 mb-3">Cetak Data</a>
+                    </div>
+                    <div class="col-6">
                       <form action="index.php" method="get">
                         <label>Cari Nama :</label>
                         <input type="text" class="form-control-sm" name="cari">
@@ -38,7 +38,7 @@
                             <option value="email">Email</option>
                             <option value="no_hp">No HP</option>
                         </select>
-                        <input type="submit" class="btn btn-warning" value="Cari">
+                        <input type="submit" class="btn btn-sm btn-warning" value="Cari">
                     </form>
                     </div>
                 </div>
@@ -96,8 +96,8 @@
 				<td><?php echo $d['email']; ?></td>
 				<td><?php echo $d['no_hp']; ?></td>
 				<td>
-					<a class="btn btn-primary" href="edit-data.php?username=<?php echo $d['username']; ?>">EDIT</a>
-					<a class="btn btn-danger"  href="aksi-hapus.php?username=<?php echo $d['username']; ?>" onclick="return confirm('Yakin Hapus?')">HAPUS</a>
+					<a class="btn btn-sm btn-primary" href="edit-data.php?username=<?php echo $d['username']; ?>">EDIT</a>
+					<a class="btn btn-sm btn-danger"  href="aksi-hapus.php?username=<?php echo $d['username']; ?>" onclick="return confirm('Yakin Hapus?')">HAPUS</a>
 				</td>
 			</tr>
 			<?php 
